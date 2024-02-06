@@ -1,12 +1,698 @@
-<!DOCTYPE html>
-<html>
+<div id="audio-container"> 
+    <table style="width: 100%; table-layout: fixed;"> 
+      <colgroup>  
+        <col style="width: 25%;">  
+        <col style="width: 15%;">  
+        <col style="width: 15%;">  
+        <col style="width: 15%;">  
+        <col style="width: 15%;"> 
+        <col style="width: 15%;"> 
+      </colgroup>
+      <thead>
+        <tr>
+          <th style="text-align: center"><strong>Transcript</strong></th>
+          <th style="text-align: center"><strong>Source accent</strong></th>
+          <th style="text-align: center"><strong>Liu. et al</strong></th>
+          <th style="text-align: center"><strong>Generative model(EnCodec)</strong></th>
+          <th style="text-align: center"><strong>Generative model(TF-Codec)</strong></th>
+          <th style="text-align: center"><strong>The proposed</strong></th>
+        </tr>
+      </thead> 
+      <tbody>  
+        <tr>   
+          <td style="text-align: center">Six spoons of fresh snow peas, five thick slabs of blue cheese, and maybe a snack for her brother Bob.</td>  
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\source\p248_003.wav" controls="" preload="" style="width: 100%;"></audio></td>  
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ac_baseline_20cases\p248_003.wav" controls="" preload="" style="width: 100%;"></audio></td>  
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\encodec-vc-vctk\p248_003.wav" controls="" preload="" style="width: 100%;"></audio></td>  
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\tfcodec_vc_vctk\p248_003.wav" controls="" preload="" style="width: 100%;"></audio></td>  
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ours_vctk_20cases_best\p248_003.wav" controls="" preload="" style="width: 100%;"></audio></td>  
+          
+        </tr>  
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">We also need a small plastic snake and a big toy frog for the kids.</td>  
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\source\p248_004.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ac_baseline_20cases\p248_004.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\encodec-vc-vctk\p248_004.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\tfcodec_vc_vctk\p248_004.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ours_vctk_20cases_best\p248_004.wav" controls="" preload="" style="width: 100%;"></audio></td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">She is given a new deputy minister for transport and planning.</td>  
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\source\p248_025.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ac_baseline_20cases\p248_025.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\encodec-vc-vctk\p248_025.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\tfcodec_vc_vctk\p248_025.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ours_vctk_20cases_best\p248_025.wav" controls="" preload="" style="width: 100%;"></audio></td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">We must provide a long-term solution to tackle this attitude.</td> 
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\source\p248_037.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ac_baseline_20cases\p248_037.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\encodec-vc-vctk\p248_037.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\tfcodec_vc_vctk\p248_037.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ours_vctk_20cases_best\p248_037.wav" controls="" preload="" style="width: 100%;"></audio></td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">She is believed to be in South Africa.</td> 
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\source\p248_041.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ac_baseline_20cases\p248_041.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\encodec-vc-vctk\p248_041.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\tfcodec_vc_vctk\p248_041.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ours_vctk_20cases_best\p248_041.wav" controls="" preload="" style="width: 100%;"></audio></td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">That's all right then.</td> 
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\source\p248_099.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ac_baseline_20cases\p248_099.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\encodec-vc-vctk\p248_099.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\tfcodec_vc_vctk\p248_099.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ours_vctk_20cases_best\p248_099.wav" controls="" preload="" style="width: 100%;"></audio></td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">Health Secretary Frank Dobson made the surprise announcement in the Commons yesterday.</td> 
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\source\p248_106.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ac_baseline_20cases\p248_106.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\encodec-vc-vctk\p248_106.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\tfcodec_vc_vctk\p248_106.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ours_vctk_20cases_best\p248_106.wav" controls="" preload="" style="width: 100%;"></audio></td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">I had relied on him.</td> 
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\source\p248_130.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ac_baseline_20cases\p248_130.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\encodec-vc-vctk\p248_130.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\tfcodec_vc_vctk\p248_130.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ours_vctk_20cases_best\p248_130.wav" controls="" preload="" style="width: 100%;"></audio></td>
+       </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">He sees a difference in the style of the two teams.</td> 
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\source\p248_142.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ac_baseline_20cases\p248_142.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\encodec-vc-vctk\p248_142.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\tfcodec_vc_vctk\p248_142.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ours_vctk_20cases_best\p248_142.wav" controls="" preload="" style="width: 100%;"></audio></td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">There is a lack of chemistry.</td> 
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\source\p248_145.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ac_baseline_20cases\p248_145.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\encodec-vc-vctk\p248_145.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\tfcodec_vc_vctk\p248_145.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ours_vctk_20cases_best\p248_145.wav" controls="" preload="" style="width: 100%;"></audio></td>
+       </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">That could mean the difference between life and death in action.</td> 
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\source\p248_147.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ac_baseline_20cases\p248_147.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\encodec-vc-vctk\p248_147.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\tfcodec_vc_vctk\p248_147.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ours_vctk_20cases_best\p248_147.wav" controls="" preload="" style="width: 100%;"></audio></td>
+       </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">It wasn't to be.</td> 
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\source\p248_195.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ac_baseline_20cases\p248_195.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\encodec-vc-vctk\p248_195.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\tfcodec_vc_vctk\p248_195.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ours_vctk_20cases_best\p248_195.wav" controls="" preload="" style="width: 100%;"></audio></td>
+         </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">It's just awful.</td> 
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\source\p248_203.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ac_baseline_20cases\p248_203.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\encodec-vc-vctk\p248_203.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\tfcodec_vc_vctk\p248_203.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ours_vctk_20cases_best\p248_203.wav" controls="" preload="" style="width: 100%;"></audio></td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">It is set in Paris.</td> 
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\source\p248_233.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ac_baseline_20cases\p248_233.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\encodec-vc-vctk\p248_233.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\tfcodec_vc_vctk\p248_233.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ours_vctk_20cases_best\p248_233.wav" controls="" preload="" style="width: 100%;"></audio></td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">It is no surprise.</td> 
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\source\p248_239.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ac_baseline_20cases\p248_239.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\encodec-vc-vctk\p248_239.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\tfcodec_vc_vctk\p248_239.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ours_vctk_20cases_best\p248_239.wav" controls="" preload="" style="width: 100%;"></audio></td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">It is also very valuable.</td> 
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\source\p248_260.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ac_baseline_20cases\p248_260.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\encodec-vc-vctk\p248_260.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\tfcodec_vc_vctk\p248_260.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ours_vctk_20cases_best\p248_260.wav" controls="" preload="" style="width: 100%;"></audio></td>
     
-<body>
-    <div>
-        <div><h1>hello world3</h1></div>
-
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">SCOTLAND has shown the way.</td> 
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\source\p248_299.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ac_baseline_20cases\p248_299.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\encodec-vc-vctk\p248_299.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\tfcodec_vc_vctk\p248_299.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ours_vctk_20cases_best\p248_299.wav" controls="" preload="" style="width: 100%;"></audio></td>
+         </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">It's the last thing on my mind.</td> 
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\source\p248_339.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ac_baseline_20cases\p248_339.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\encodec-vc-vctk\p248_339.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\tfcodec_vc_vctk\p248_339.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ours_vctk_20cases_best\p248_339.wav" controls="" preload="" style="width: 100%;"></audio></td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">To do so he reckons that a good opening result is essential.</td> 
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\source\p248_353.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ac_baseline_20cases\p248_353.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\encodec-vc-vctk\p248_353.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\tfcodec_vc_vctk\p248_353.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ours_vctk_20cases_best\p248_353.wav" controls="" preload="" style="width: 100%;"></audio></td>
+       </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">We have to be sure that the taxation system can work.</td> 
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\source\p248_358.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ac_baseline_20cases\p248_358.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\encodec-vc-vctk\p248_358.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\tfcodec_vc_vctk\p248_358.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\vctk_iclr\ours_vctk_20cases_best\p248_358.wav" controls="" preload="" style="width: 100%;"></audio></td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <h2 id="any-to-many-vc-demo-10-utterances-randomly-chosen-from-the-test-set">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10 test cases from L1-L2 ARCTIC</h2>
+    
+    <table style="width: 100%; table-layout: fixed;"> 
+      <colgroup>  
+        <col style="width: 25%;">  
+        <col style="width: 15%;">  
+        <col style="width: 15%;">  
+        <col style="width: 15%;">  
+        <col style="width: 15%;"> 
+        <col style="width: 15%;"> 
+      </colgroup>
+      <thead>
+        <tr>
+          <th style="text-align: center"><strong>Transcript</strong></th>
+          <th style="text-align: center"><strong>Source accent</strong></th>
+          <th style="text-align: center"><strong>Target accent</strong></th>
+          <th style="text-align: center"><strong>Generative model(EnCodec)</strong></th>
+          <th style="text-align: center"><strong>Generative model(TF-Codec)</strong></th>
+          <th style="text-align: center"><strong>The proposed</strong></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: center">The hunters were still arguing and roaring like some semi-human amphibious breed.</td> 
+          <td style="text-align: center"><audio src="iclr_final\arctic\asi_source_KSP_arctic_b0397.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\native_bdl_arctic_b0397.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\encodec-vc-arctic_KSP_arctic_b0397.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\tfcodec_ac_epoch6_best_KSP_arctic_b0397.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\tfcodec_vc_asi_source_KSP_arctic_b0397.wav" controls="" preload="" style="width: 100%;"></audio></td>
+    
+       </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">I learned it myself in English ships.</td> 
+          <td style="text-align: center"><audio src="iclr_final\arctic\asi_source_KSP_arctic_b0401.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\native_bdl_arctic_b0401.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\encodec-vc-arctic_KSP_arctic_b0401.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\tfcodec_ac_epoch6_best_KSP_arctic_b0401.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\tfcodec_vc_asi_source_KSP_arctic_b0401.wav" controls="" preload="" style="width: 100%;"></audio></td>
+    
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">It is a very tenable hypothesis, and will bear looking into.</td> 
+          <td style="text-align: center"><audio src="iclr_final\arctic\asi_source_ASI_arctic_b0424.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\native_bdl_arctic_b0424.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\encodec-vc-arctic_ASI_arctic_b0424.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\tfcodec_ac_epoch6_best_ASI_arctic_b0424.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\tfcodec_vc_asi_source_ASI_arctic_b0424.wav" controls="" preload="" style="width: 100%;"></audio></td>
+    
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">There were orange-green, gold-green, and a copper-green.</td> 
+          <td style="text-align: center"><audio src="iclr_final\arctic\asi_source_ASI_arctic_b0425.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\native_bdl_arctic_b0425.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\encodec-vc-arctic_ASI_arctic_b0425.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\tfcodec_ac_epoch6_best_ASI_arctic_b0425.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\tfcodec_vc_asi_source_ASI_arctic_b0425.wav" controls="" preload="" style="width: 100%;"></audio></td>
+    
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">Famine had been my great ally.</td> 
+          <td style="text-align: center"><audio src="iclr_final\arctic\asi_source_RRBI_arctic_b0436.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\native_bdl_arctic_b0436.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\encodec-vc-arctic_RRBI_arctic_b0436.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\tfcodec_ac_epoch6_best_RRBI_arctic_b0436.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\tfcodec_vc_asi_source_RRBI_arctic_b0436.wav" controls="" preload="" style="width: 100%;"></audio></td>
+    
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">Mops, sir, eagerly answered the sailor at the wheel.</td> 
+          <td style="text-align: center"><audio src="iclr_final\arctic\asi_source_RRBI_arctic_b0445.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\native_bdl_arctic_b0445.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\encodec-vc-arctic_RRBI_arctic_b0445.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\tfcodec_ac_epoch6_best_RRBI_arctic_b0445.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\tfcodec_vc_asi_source_RRBI_arctic_b0445.wav" controls="" preload="" style="width: 100%;"></audio></td>
+    
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">You used to joyride like the very devil.</td> 
+          <td style="text-align: center"><audio src="iclr_final\arctic\asi_source_TNI_arctic_b0451.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\native_bdl_arctic_b0451.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\encodec-vc-arctic_TNI_arctic_b0451.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\tfcodec_ac_epoch6_best_TNI_arctic_b0451.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\tfcodec_ac_epoch6_best_TNI_arctic_b0451.wav" controls="" preload="" style="width: 100%;"></audio></td>
+    
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">But such divergence of opinion would constitute no menace to society.</td> 
+          <td style="text-align: center"><audio src="iclr_final\arctic\asi_source_TNI_arctic_b0465.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\native_bdl_arctic_b0465.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\encodec-vc-arctic_TNI_arctic_b0465.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\tfcodec_ac_epoch6_best_TNI_arctic_b0465.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\tfcodec_ac_epoch6_best_TNI_arctic_b0465.wav" controls="" preload="" style="width: 100%;"></audio></td>
+    
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">Not a wheel moved in his empire.</td> 
+          <td style="text-align: center"><audio src="iclr_final\arctic\asi_source_SVBI_arctic_b0475.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\native_bdl_arctic_b0475.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\encodec-vc-arctic_SVBI_arctic_b0475.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\tfcodec_ac_epoch6_best_SVBI_arctic_b0475.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\tfcodec_ac_epoch6_best_SVBI_arctic_b0475.wav" controls="" preload="" style="width: 100%;"></audio></td>
+    
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">The reorganization of these countries took the form of revolution.</td> 
+          <td style="text-align: center"><audio src="iclr_final\arctic\asi_source_SVBI_arctic_b0476.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\native_bdl_arctic_b0476.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\encodec-vc-arctic_SVBI_arctic_b0476.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\tfcodec_ac_epoch6_best_SVBI_arctic_b0476.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final\arctic\tfcodec_ac_epoch6_best_SVBI_arctic_b0476.wav" controls="" preload="" style="width: 100%;"></audio></td>
+    
+        </tr>
+      </tbody>
+    </table>
+    
+    <h2 id="any-to-many-vc-demo-10-utterances-randomly-chosen-from-the-test-set"><strong>A/B testing samples in Section 3.2</strong></h2>
+    <!-- <h2 id="any-to-many-vc-demo-10-utterances-randomly-chosen-from-the-test-set"><strong>Section 3.2 test cases</strong></h2> -->
+    <h2 id="any-to-many-vc-demo-10-utterances-randomly-chosen-from-the-test-set">&nbsp;&nbsp;&nbsp;&nbsp;Source of semantic tokens: utterance in general American-English</h2>  
+    
+    <table style="width: 100%; table-layout: fixed;"> 
+      <colgroup>  
+        <col style="width: 25%;">  
+        <col style="width: 15%;">  
+        <col style="width: 15%;">  
+        <col style="width: 15%;">  
+        <!-- <col style="width: 2%;">   -->
+        <col style="width: 15%;"> 
+        <col style="width: 15%;"> 
+      </colgroup>
+      <thead>
+        <tr>
+          <th style="text-align: center"><strong>Transcript</strong></th>
+          <th style="text-align: center"><strong>Content source</strong></th>
+          <th style="text-align: center; color: green;"><strong>American accent prompt</strong></th>
+          <th style="text-align: center"><strong>Generative model(TF-Codec) </strong></th>
+          <th style="text-align: center; color: green;"><strong>Indian-English prompt </strong></th>
+          <th style="text-align: center"><strong>Generative model(TF-Codec)</strong></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: center">The rainbow is a division of white light into many beautiful colors.</td> 
+          <td style="text-align: center"><audio src="iclr_final/sec3_2/source/p226_007.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/sec3_2/ref_native/clb_arctic_b0390.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/sec3_2/converted_test_can_del/hubert_depup_v2_top_102023-11-17_22:39:34/clb_arctic_b0390_p226_007_ar_epoch-40pt_nar_checkpoint-100000pt_2023_11_17_14_39_41_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/sec3_2/ref_indian/asi_arctic_a0001.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/sec3_2/converted_test_can_del/hubert_depup_v2_top_102023-11-17_22:45:55/asi_arctic_a0001_p226_007_ar_epoch-40pt_nar_checkpoint-100000pt_2023_11_17_14_45_57_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+      </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">There is , according to legend, a boiling pot of gold at one end.</td> 
+          <td style="text-align: center"><audio src="iclr_final/sec3_2/source/p227_009.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/sec3_2/ref_native/p225_056.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/sec3_2/converted_test_can_del/hubert_depup_v2_top_102023-11-17_22:39:34/p225_056_p227_009_ar_epoch-40pt_nar_checkpoint-100000pt_2023_11_17_14_39_41_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/sec3_2/ref_indian/KSP_arctic_a0002.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/sec3_2/converted_test_can_del/hubert_depup_v2_top_102023-11-17_22:45:55/KSP_arctic_a0002_p227_009_ar_epoch-40pt_nar_checkpoint-100000pt_2023_11_17_14_45_57_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+     </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">People look, but no one ever finds it.</td> 
+          <td style="text-align: center"><audio src="iclr_final/sec3_2/source/p228_010.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/sec3_2/ref_native/rms_arctic_b0391.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/sec3_2/converted_test_can_del/hubert_depup_v2_top_102023-11-17_22:39:34/rms_arctic_b0391_p228_010_ar_epoch-40pt_nar_checkpoint-100000pt_2023_11_17_14_39_41_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/sec3_2/ref_indian/RRBI_arctic_a0003.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/sec3_2/converted_test_can_del/hubert_depup_v2_top_102023-11-17_22:45:55/RRBI_arctic_a0003_p228_010_ar_epoch-40pt_nar_checkpoint-100000pt_2023_11_17_14_45_57_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+     </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td style="text-align: center">The Greeks used to imagine that it was a sign from the gods to foretell war or heavy rain.</td> 
+        <td style="text-align: center"><audio src="iclr_final/sec3_2/source/p229_015.wav" controls="" preload="" style="width: 100%;"></audio></td>
+        <td style="text-align: center"><audio src="iclr_final/sec3_2/ref_native/slt_arctic_b0392.wav" controls="" preload="" style="width: 100%;"></audio></td>
+        <td style="text-align: center"><audio src="iclr_final/sec3_2/converted_test_can_del/hubert_depup_v2_top_102023-11-17_22:39:34/slt_arctic_b0392_p229_015_ar_epoch-40pt_nar_checkpoint-100000pt_2023_11_17_14_39_41_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+        <td style="text-align: center"><audio src="iclr_final/sec3_2/ref_indian/SVBI_arctic_a0004.wav" controls="" preload="" style="width: 100%;"></audio></td>
+        <td style="text-align: center"><audio src="iclr_final/sec3_2/converted_test_can_del/hubert_depup_v2_top_102023-11-17_22:45:55/SVBI_arctic_a0004_p229_015_ar_epoch-40pt_nar_checkpoint-100000pt_2023_11_17_14_45_57_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+    </tr>
+    </tbody>
+    </table>
+    
+    <h2 id="any-to-many-vc-demo-10-utterances-randomly-chosen-from-the-test-set"><strong>Zero-shot tests on more source accents</strong></h2>
+    <h2 id="any-to-many-vc-demo-10-utterances-randomly-chosen-from-the-test-set">&nbsp;&nbsp;&nbsp;&nbsp;Source accent: Chinese-English -&gt; Target accent: General American-English </h2>  
+    
+    <!-- <h2 id="any-to-many-vc-demo-10-utterances-randomly-chosen-from-the-test-set">&nbsp;&nbsp;Chinese accent</h2> -->
+    <table style="width: 100%; table-layout: fixed;"> 
+      <colgroup>  
+        <col style="width: 25%;">  
+        <col style="width: 15%;">  
+        <col style="width: 15%;">  
+        <col style="width: 15%;">  
+        <col style="width: 15%;"> 
+        <col style="width: 15%;"> 
+      </colgroup>
+      <thead>
+        <tr>
+          <th style="text-align: center"><strong>Transcript</strong></th>
+          <th style="text-align: center"><strong>Source accent</strong></th>
+          <th style="text-align: center"><strong>Target accent</strong></th>
+          <th style="text-align: center"><strong>Generative model(EnCodec)</strong></th>
+          <th style="text-align: center"><strong>Generative model(TF-Codec)</strong></th>
+          <th style="text-align: center"><strong>The proposed</strong></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: center">Author of the danger trail Philip Steels etc.</td> 
+          <td style="text-align: center"><audio src="iclr_final/other_accents/chinese/arctic_a0001.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/native_speech/arctic_a0001.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/chinese-encodec-ac/arctic_a0001_20231120_170421_arctic_a0001_ar_best-train-loss_epoch57pt_nar_epoch-40pt_2023_11_20_17_04_02_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/converted_test_can_del/hubert_depup_v2_top_102023-11-21_00:34:02_chinese_tfcodec/arctic_a0001_20231120_163417_arctic_a0001_ar_epoch-40pt_nar_checkpoint-100000pt_2023_11_20_16_34_04_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/chinese_result/arctic_a0001.wav" controls="" preload="" style="width: 100%;"></audio></td>
+    
+       </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">Now you're coming down to business Phil he exclaimed.</td> 
+          <td style="text-align: center"><audio src="iclr_final/other_accents/chinese/arctic_a0014.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/native_speech/arctic_a0014.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/chinese-encodec-ac/arctic_a0014_20231120_170428_arctic_a0014_ar_best-train-loss_epoch57pt_nar_epoch-40pt_2023_11_20_17_04_02_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/converted_test_can_del/hubert_depup_v2_top_102023-11-21_00:34:02_chinese_tfcodec/arctic_a0014_20231120_163420_arctic_a0014_ar_epoch-40pt_nar_checkpoint-100000pt_2023_11_20_16_34_04_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/chinese_result/arctic_a0014.wav" controls="" preload="" style="width: 100%;"></audio></td>
+    
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">I'm playing a single hand in what looks like a losing game.</td> 
+          <td style="text-align: center"><audio src="iclr_final/other_accents/chinese/arctic_a0010.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/native_speech/arctic_a0010.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/chinese-encodec-ac/arctic_a0010_20231120_170413_arctic_a0010_ar_best-train-loss_epoch57pt_nar_epoch-40pt_2023_11_20_17_04_02_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/converted_test_can_del/hubert_depup_v2_top_102023-11-21_00:34:02_chinese_tfcodec/arctic_a0010_20231120_163412_arctic_a0010_ar_epoch-40pt_nar_checkpoint-100000pt_2023_11_20_16_34_04_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/chinese_result/arctic_a0010.wav" controls="" preload="" style="width: 100%;"></audio></td>
+    
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">I suppose you wonder why she is coming up here.</td> 
+          <td style="text-align: center"><audio src="iclr_final/other_accents/chinese/arctic_a0040.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/native_speech/arctic_a0040.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/chinese-encodec-ac/arctic_a0040_20231120_170434_arctic_a0040_ar_best-train-loss_epoch57pt_nar_epoch-40pt_2023_11_20_17_04_02_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/converted_test_can_del/hubert_depup_v2_top_102023-11-21_00:34:02_chinese_tfcodec/arctic_a0040_20231120_163424_arctic_a0040_ar_epoch-40pt_nar_checkpoint-100000pt_2023_11_20_16_34_04_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/chinese_result/arctic_a0040.wav" controls="" preload="" style="width: 100%;"></audio></td>
+    
+        </tr>
+      </tbody>
+    
+    
+    <!-- <h2 id="any-to-many-vc-demo-10-utterances-randomly-chosen-from-the-test-set">&nbsp;&nbsp;Chinese accent</h2> -->
+    </table><h2 id="any-to-many-vc-demo-10-utterances-randomly-chosen-from-the-test-set">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prompt with dereverbed source accent speech </h2><table style="width: 100%; table-layout: fixed;"> 
+        
+      <colgroup>  
+        <col style="width: 25%;">  
+        <col style="width: 15%;">  
+        <col style="width: 15%;">  
+        <col style="width: 15%;">  
+        <col style="width: 15%;"> 
+        <col style="width: 15%;"> 
+      </colgroup>
+      <thead>
+        <tr>
+          <th style="text-align: center"><strong>Transcript</strong></th>
+          <th style="text-align: center"><strong>Dereverbed source accent</strong></th>
+          <th style="text-align: center"><strong>Target accent</strong></th>
+          <th style="text-align: center"><strong>Generative model(EnCodec)</strong></th>
+          <th style="text-align: center"><strong>Generative model(TF-Codec)</strong></th>
+          <th style="text-align: center"><strong>The proposed</strong></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: center">Author of the danger trail Philip Steels etc.</td> 
+          <td style="text-align: center"><audio src="iclr_final/more_accents_dereverb/chinese/chinese_arctic_a0001.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/native_speech/arctic_a0001.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/more_accents_dereverb/Chinese-encodec-ac-de-reverb/chinese_arctic_a0001_20231123_081355_chinese_arctic_a0001_ar_best-train-loss_epoch57pt_nar_epoch-40pt_2023_11_23_08_13_32_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/more_accents_dereverb/chinese-tfcodec-vc-de-reverb/arctic_a0014_chinese_arctic_a0001_ar_epoch-40pt_nar_checkpoint-100000pt_2023_11_23_08_31_19_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/chinese_result/chinese_arctic_a0014_arctic_a0001_ar_epoch-40pt_nar_checkpoint-100000pt_2023_11_23_06_32_33_2.wav" controls="" preload="" style="width: 100%;"></audio></td>
+    
+       </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">Now you're coming down to business Phil he exclaimed.</td> 
+          <td style="text-align: center"><audio src="iclr_final/more_accents_dereverb/chinese/chinese_arctic_a0014.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/native_speech/arctic_a0014.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/more_accents_dereverb/Chinese-encodec-ac-de-reverb/chinese_arctic_a0014_20231123_081350_chinese_arctic_a0014_ar_best-train-loss_epoch57pt_nar_epoch-40pt_2023_11_23_08_13_32_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/more_accents_dereverb/chinese-tfcodec-vc-de-reverb/chinese_arctic_a0014_20231123_081728_chinese_arctic_a0014_ar_epoch-40pt_nar_checkpoint-100000pt_2023_11_23_08_17_07_1.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/chinese_result/chinese_arctic_a0014_arctic_a0014_ar_epoch-40pt_nar_checkpoint-100000pt_2023_11_23_06_32_33_2.wav" controls="" preload="" style="width: 100%;"></audio></td>
+    
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">I'm playing a single hand in what looks like a losing game.</td> 
+          <td style="text-align: center"><audio src="iclr_final/more_accents_dereverb/chinese/chinese_arctic_a0010.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/native_speech/arctic_a0010.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/more_accents_dereverb/Chinese-encodec-ac-de-reverb/chinese_arctic_a0010_20231123_081342_chinese_arctic_a0010_ar_best-train-loss_epoch57pt_nar_epoch-40pt_2023_11_23_08_13_32_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/more_accents_dereverb/chinese-tfcodec-vc-de-reverb/chinese_arctic_a0010_20231123_081716_chinese_arctic_a0010_ar_epoch-40pt_nar_checkpoint-100000pt_2023_11_23_08_17_07_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/chinese_result/chinese_arctic_a0010_arctic_a0010_ar_epoch-40pt_nar_checkpoint-100000pt_2023_11_23_06_32_33_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+    
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">I suppose you wonder why she is coming up here.</td> 
+          <td style="text-align: center"><audio src="iclr_final/more_accents_dereverb/chinese/chinese_arctic_a0040.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/native_speech/arctic_a0040.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/more_accents_dereverb/Chinese-encodec-ac-de-reverb/chinese_arctic_a0040_20231123_081401_chinese_arctic_a0040_ar_best-train-loss_epoch57pt_nar_epoch-40pt_2023_11_23_08_13_32_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/more_accents_dereverb/chinese-tfcodec-vc-de-reverb/chinese_arctic_a0040_20231123_081749_chinese_arctic_a0040_ar_epoch-40pt_nar_checkpoint-100000pt_2023_11_23_08_17_07_1.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/chinese_result/chinese_arctic_a0040_arctic_a0040_ar_epoch-40pt_nar_checkpoint-100000pt_2023_11_23_06_32_33_1.wav" controls="" preload="" style="width: 100%;"></audio></td>
+    
+        </tr>
+      </tbody>
+      </table><h2 id="any-to-many-vc-demo-10-utterances-randomly-chosen-from-the-test-set">&nbsp;&nbsp;&nbsp;&nbsp;Source accent: Korean-English -&gt; Target accent: General American-English </h2><table style="width: 100%; table-layout: fixed;"> 
+          
+        <!-- <h2 id="any-to-many-vc-demo-10-utterances-randomly-chosen-from-the-test-set">&nbsp;&nbsp;Korean accent</h2> -->
+        <colgroup>  
+          <col style="width: 25%;">  
+          <col style="width: 15%;">  
+          <col style="width: 15%;">  
+          <col style="width: 15%;">  
+          <col style="width: 15%;"> 
+          <col style="width: 15%;">  
+        </colgroup>
+        <thead>
+          <tr>
+            <th style="text-align: center"><strong>Transcript</strong></th>
+            <th style="text-align: center"><strong>Source accent</strong></th>
+            <th style="text-align: center"><strong>Target accent</strong></th>
+            <th style="text-align: center"><strong>Generative model(EnCodec)</strong></th>
+            <th style="text-align: center"><strong>Generative model(TF-Codec)</strong></th>
+            <th style="text-align: center"><strong>The proposed</strong></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align: center">I was about to do this when cooler judgment prevailed.</td> 
+            <td style="text-align: center"><audio src="iclr_final/other_accents/korea/arctic_a0025.wav" controls="" preload="" style="width: 100%;"></audio></td>
+            <td style="text-align: center"><audio src="iclr_final/other_accents/native_speech/arctic_a0025.wav" controls="" preload="" style="width: 100%;"></audio></td>
+            <td style="text-align: center"><audio src="iclr_final/other_accents/korea-encodec-ac/arctic_a0025_20231120_170514_arctic_a0025_ar_best-train-loss_epoch57pt_nar_epoch-40pt_2023_11_20_17_05_03_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+            <td style="text-align: center"><audio src="iclr_final/more_accents_dereverb/korea-tfcodec-vc-de-reverb/korean_arctic_a0025_20231123_081538_korean_arctic_a0025_ar_epoch-40pt_nar_checkpoint-100000pt_2023_11_23_08_15_28_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+            <td style="text-align: center"><audio src="iclr_final/other_accents/korea_result/arctic_a0025.wav" controls="" preload="" style="width: 100%;"></audio></td>
+      
+         </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td style="text-align: center">And now down there Eileen was waiting for him.</td> 
+            <td style="text-align: center"><audio src="iclr_final/other_accents/korea/arctic_a0074.wav" controls="" preload="" style="width: 100%;"></audio></td>
+            <td style="text-align: center"><audio src="iclr_final/other_accents/native_speech/arctic_a0074.wav" controls="" preload="" style="width: 100%;"></audio></td>
+            <td style="text-align: center"><audio src="iclr_final/other_accents/korea-encodec-ac/arctic_a0074_20231120_170532_arctic_a0074_ar_best-train-loss_epoch57pt_nar_epoch-40pt_2023_11_20_17_05_03_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+            <td style="text-align: center"><audio src="iclr_final/more_accents_dereverb/korea-tfcodec-vc-de-reverb/korean_arctic_a0074_20231123_081547_korean_arctic_a0074_ar_epoch-40pt_nar_checkpoint-100000pt_2023_11_23_08_15_28_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+            <td style="text-align: center"><audio src="iclr_final/other_accents/korea_result/arctic_a0074.wav" controls="" preload="" style="width: 100%;"></audio></td>
+      
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td style="text-align: center">Their forces were already moving into the north country.</td> 
+            <td style="text-align: center"><audio src="iclr_final/other_accents/korea/arctic_a0029.wav" controls="" preload="" style="width: 100%;"></audio></td>
+            <td style="text-align: center"><audio src="iclr_final/other_accents/native_speech/arctic_a0029.wav" controls="" preload="" style="width: 100%;"></audio></td>
+            <td style="text-align: center"><audio src="iclr_final/other_accents/korea-encodec-ac/arctic_a0029_20231120_170520_arctic_a0029_ar_best-train-loss_epoch57pt_nar_epoch-40pt_2023_11_20_17_05_03_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+            <td style="text-align: center"><audio src="iclr_final/more_accents_dereverb/korea-tfcodec-vc-de-reverb/korean_arctic_a0029_20231123_081556_korean_arctic_a0029_ar_epoch-40pt_nar_checkpoint-100000pt_2023_11_23_08_15_28_1.wav" controls="" preload="" style="width: 100%;"></audio></td>
+            <td style="text-align: center"><audio src="iclr_final/other_accents/korea_result/arctic_a0029.wav" controls="" preload="" style="width: 100%;"></audio></td>
+      
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td style="text-align: center">I suppose you wonder why she is coming up here.</td> 
+            <td style="text-align: center"><audio src="iclr_final/other_accents/korea/arctic_a0040.wav" controls="" preload="" style="width: 100%;"></audio></td>
+            <td style="text-align: center"><audio src="iclr_final/other_accents/native_speech/arctic_a0040.wav" controls="" preload="" style="width: 100%;"></audio></td>
+            <td style="text-align: center"><audio src="iclr_final/other_accents/korea-encodec-ac/arctic_a0040_20231120_170526_arctic_a0040_ar_best-train-loss_epoch57pt_nar_epoch-40pt_2023_11_20_17_05_03_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+            <td style="text-align: center"><audio src="iclr_final/more_accents_dereverb/korea-tfcodec-vc-de-reverb/korean_arctic_a0040_20231123_081606_korean_arctic_a0040_ar_epoch-40pt_nar_checkpoint-100000pt_2023_11_23_08_15_28_1.wav" controls="" preload="" style="width: 100%;"></audio></td>
+            <td style="text-align: center"><audio src="iclr_final/other_accents/korea_result/arctic_a0040.wav" controls="" preload="" style="width: 100%;"></audio></td>
+      
+          </tr>
+        </tbody>
+    </table>
+    
+    <h2 id="any-to-many-vc-demo-10-utterances-random        Prompt with dereverbed sly-chosen-from-the-test-set">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prompt with dereverbed source accent speech</h2><table style="width: 100%; table-layout: fixed;"> 
+        
+      <!-- <h2 id="any-to-many-vc-demo-10-utterances-randomly-chosen-from-the-test-set">&nbsp;&nbsp;Korean accent</h2> -->
+      <colgroup>  
+        <col style="width: 25%;">  
+        <col style="width: 15%;">  
+        <col style="width: 15%;">  
+        <col style="width: 15%;">  
+        <col style="width: 15%;"> 
+        <col style="width: 15%;">  
+      </colgroup>
+      <thead>
+        <tr>
+          <th style="text-align: center"><strong>Transcript</strong></th>
+          <th style="text-align: center"><strong>Dereverbed source accent</strong></th>
+          <th style="text-align: center"><strong>Target accent</strong></th>
+          <th style="text-align: center"><strong>Generative model(EnCodec)</strong></th>
+          <th style="text-align: center"><strong>Generative model(TF-Codec)</strong></th>
+          <th style="text-align: center"><strong>The proposed</strong></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: center">I was about to do this when cooler judgment prevailed.</td> 
+          <td style="text-align: center"><audio src="iclr_final/more_accents_dereverb/korea/korean_arctic_a0025.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/native_speech/arctic_a0025.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/korea-encodec-ac/arctic_a0025_20231120_170514_arctic_a0025_ar_best-train-loss_epoch57pt_nar_epoch-40pt_2023_11_20_17_05_03_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/converted_test_can_del/hubert_depup_v2_top_102023-11-21_01:11:13_korea_tfcodec/arctic_a0025_20231120_171123_arctic_a0025_ar_epoch-40pt_nar_checkpoint-100000pt_2023_11_20_17_11_14_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/korea_result/korean_arctic_a0025_arctic_a0025_ar_epoch-40pt_nar_checkpoint-100000pt_2023_11_23_06_50_33_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+    
+       </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">And now down there Eileen was waiting for him.</td> 
+          <td style="text-align: center"><audio src="iclr_final/more_accents_dereverb/korea/korean_arctic_a0074.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/native_speech/arctic_a0074.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/korea-encodec-ac/arctic_a0074_20231120_170532_arctic_a0074_ar_best-train-loss_epoch57pt_nar_epoch-40pt_2023_11_20_17_05_03_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/converted_test_can_del/hubert_depup_v2_top_102023-11-21_01:11:13_korea_tfcodec/arctic_a0074_20231120_171133_arctic_a0074_ar_epoch-40pt_nar_checkpoint-100000pt_2023_11_20_17_11_14_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/korea_result/korean_arctic_a0074_arctic_a0074_ar_epoch-40pt_nar_checkpoint-100000pt_2023_11_23_06_50_33_2.wav" controls="" preload="" style="width: 100%;"></audio></td>
+    
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">Their forces were already moving into the north country.</td> 
+          <td style="text-align: center"><audio src="iclr_final/more_accents_dereverb/korea/korean_arctic_a0029.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/native_speech/arctic_a0029.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/korea-encodec-ac/arctic_a0029_20231120_170520_arctic_a0029_ar_best-train-loss_epoch57pt_nar_epoch-40pt_2023_11_20_17_05_03_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/converted_test_can_del/hubert_depup_v2_top_102023-11-21_01:11:13_korea_tfcodec/arctic_a0029_20231120_171127_arctic_a0029_ar_epoch-40pt_nar_checkpoint-100000pt_2023_11_20_17_11_14_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/korea_result/korean_arctic_a0029_arctic_a0029_ar_epoch-40pt_nar_checkpoint-100000pt_2023_11_23_06_50_33_2.wav" controls="" preload="" style="width: 100%;"></audio></td>
+    
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td style="text-align: center">I suppose you wonder why she is coming up here.</td> 
+          <td style="text-align: center"><audio src="iclr_final/more_accents_dereverb/korea/korean_arctic_a0040.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/native_speech/arctic_a0040.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/korea-encodec-ac/arctic_a0040_20231120_170526_arctic_a0040_ar_best-train-loss_epoch57pt_nar_epoch-40pt_2023_11_20_17_05_03_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/converted_test_can_del/hubert_depup_v2_top_102023-11-21_01:11:13_korea_tfcodec/arctic_a0040_20231120_171130_arctic_a0040_ar_epoch-40pt_nar_checkpoint-100000pt_2023_11_20_17_11_14_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+          <td style="text-align: center"><audio src="iclr_final/other_accents/korea_result/korean_arctic_a0040_arctic_a0040_ar_epoch-40pt_nar_checkpoint-100000pt_2023_11_23_06_50_33_0.wav" controls="" preload="" style="width: 100%;"></audio></td>
+    
+        </tr>
+      </tbody>
+    </table>
+    
+    
+          <!-- </section> -->
+    
+        
+      
+    
     </div>
-
-
-</body>
-</html>

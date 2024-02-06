@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html>
+
+<style>
+    .div-1 {
+        background-color: #E4E4E3;
+        margin-top: 20px;
+    }
     
+    .div-2 {
+    	background-color: #E4E4E3;
+        margin-top: 20px;
+    }
+    .div-3 {
+        background-color: #E4E4E3;
+        margin-top: 20px;
+    }
+    .div-head {
+        /* background-color: #c2c2be; */
+        color: black;
+        font-size: larger;
+        margin-top: 20px;
+    }
+    .div-subhead {
+        /* background-color: #c2c2be;; */
+        margin-top: 20px;
+        font-size: large;
+    }
+</style>
+
+
 <body>
     <div>
-        <div><h2>Reconstruction</h2></div>
-        <div style="margin-top: 20px;">
-            <!-- <h3>English</h3> -->
+        <div class="div-head"><h2>Reconstruction (English)</h2></div>
+        <div class="div-1">
+            <!-- <div class="div-subhead"><h3>English</h3></div> -->
             <table>
                 <tbody>
                     <tr>
@@ -14,62 +42,128 @@
                         <th style="width:300px">TFCodec@6kbps</th>
                         <th style="width:300px">mHubert-Vocoder@500bps</th>
                         <th style="width:300px">Hierarchical LM@500bps</th> 
-                        <th style="width:300px">Unicodec@500bps</th>
+                        <th style="width:300px">UniCodec@500bps</th>
                     </tr>
                     <tr>
-                        <th style="width:300px"><audio src="audio/gt/5683-32866-0018.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/encodec/5683-32866-0018.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/tfcodec/5683-32866-0018.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/mhubert/5683-32866-0018.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/hierarchical/5683-32866-0018.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/unicodec/5683-32866-0018.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/gt/5683-32866-0018.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/encodec/5683-32866-0018.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/tfcodec/5683-32866-0018.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/mhubert/5683-32866-0018.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/hierarchical/5683-32866-0018.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/unicodec/5683-32866-0018.flac" controls="controls"></audio></th>
                     </tr>
                     <tr>
-                        <th style="width:300px"><audio src="audio/gt/8455-210777-0034.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/encodec/8455-210777-0034.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/tfcodec/8455-210777-0034.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/mhubert/8455-210777-0034.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/hierarchical/8455-210777-0034.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/unicodec/8455-210777-0034.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/gt/8455-210777-0034.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/encodec/8455-210777-0034.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/tfcodec/8455-210777-0034.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/mhubert/8455-210777-0034.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/hierarchical/8455-210777-0034.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/unicodec/8455-210777-0034.flac" controls="controls"></audio></th>
                     </tr>
                     <tr>
-                        <th style="width:300px"><audio src="audio/gt/4507-16021-0045.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/encodec/4507-16021-0045.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/tfcodec/4507-16021-0045.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/mhubert/4507-16021-0045.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/hierarchical/4507-16021-0045.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/unicodec/4507-16021-0045.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/gt/4507-16021-0045.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/encodec/4507-16021-0045.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/tfcodec/4507-16021-0045.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/mhubert/4507-16021-0045.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/hierarchical/4507-16021-0045.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/unicodec/4507-16021-0045.flac" controls="controls"></audio></th>
                     </tr>
                     <tr>
-                        <th style="width:300px"><audio src="audio/gt/1320-122617-0037.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/encodec/1320-122617-0037.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/tfcodec/1320-122617-0037.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/mhubert/1320-122617-0037.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/hierarchical/1320-122617-0037.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/unicodec/1320-122617-0037.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/gt/1320-122617-0037.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/encodec/1320-122617-0037.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/tfcodec/1320-122617-0037.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/mhubert/1320-122617-0037.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/hierarchical/1320-122617-0037.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/unicodec/1320-122617-0037.flac" controls="controls"></audio></th>
                     </tr>
                     <tr>
-                        <th style="width:300px"><audio src="audio/gt/2830-3980-0062.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/encodec/2830-3980-0062.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/tfcodec/2830-3980-0062.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/mhubert/2830-3980-0062.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/hierarchical/2830-3980-0062.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/unicodec/2830-3980-0062.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/gt/2830-3980-0062.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/encodec/2830-3980-0062.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/tfcodec/2830-3980-0062.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/mhubert/2830-3980-0062.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/hierarchical/2830-3980-0062.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/unicodec/2830-3980-0062.flac" controls="controls"></audio></th>
                     </tr>
 
                     <tr>
-                        <th style="width:300px"><audio src="audio/gt/4992-41797-0018.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/encodec/4992-41797-0018.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/tfcodec/4992-41797-0018.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/mhubert/4992-41797-0018.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/hierarchical/4992-41797-0018.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/unicodec/4992-41797-0018.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/gt/4992-41797-0018.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/encodec/4992-41797-0018.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/tfcodec/4992-41797-0018.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/mhubert/4992-41797-0018.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/hierarchical/4992-41797-0018.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/english/unicodec/4992-41797-0018.flac" controls="controls"></audio></th>
                     </tr>
                 </tbody>
             </table>
         </div>
-        <div><h2>Speech-to-speech translation</h2></div>
-        <div style="margin-top: 20px;">
+        <div class="div-head"><h2>Reconstruction (Spanish)</h2></div>
+        <div class="div-1">
+            <!-- <div class="div-subhead"><h3>Spanish</h3></div> -->
+            <table>
+                <tbody>
+                    <tr>
+                        <th style="width:300px">Ground Truth</th>
+                        <th style="width:300px">Encodec@6kbps</th> 
+                        <th style="width:300px">TFCodec@6kbps</th>
+                        <th style="width:300px">mHubert-Vocoder@500bps</th>
+                        <th style="width:300px">Hierarchical LM@500bps</th> 
+                        <th style="width:300px">UniCodec@500bps</th>
+                    </tr>
+                    <tr>
+                        <th style="width:300px"><audio src="audio/spanish/gt/8306_7405_000099.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/spanish/encodec/8306_7405_000099.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/spanish/tfcodec/8306_7405_000099.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/spanish/mhubert/8306_7405_000099.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/spanish/hierarchical/8306_7405_000099.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/spanish/unicodec/8306_7405_000099.flac" controls="controls"></audio></th>
+                    </tr>
+                    <tr>
+                        <th style="width:300px"><audio src="audio/spanish/gt/12249_11991_000008.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/spanish/encodec/12249_11991_000008.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/spanish/tfcodec/12249_11991_000008.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/spanish/mhubert/12249_11991_000008.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/spanish/hierarchical/12249_11991_000008.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/spanish/unicodec/12249_11991_000008.flac" controls="controls"></audio></th>
+                    </tr>
+                    <tr>
+                        <th style="width:300px"><audio src="audio/spanish/gt/5870_4006_000061.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/spanish/encodec/5870_4006_000061.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/spanish/tfcodec/5870_4006_000061.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/spanish/mhubert/5870_4006_000061.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/spanish/hierarchical/5870_4006_000061.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/spanish/unicodec/5870_4006_000061.flac" controls="controls"></audio></th>
+                    </tr>
+                    <tr>
+                        <th style="width:300px"><audio src="audio/spanish/gt/6306_4006_000064.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/spanish/encodec/6306_4006_000064.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/spanish/tfcodec/6306_4006_000064.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/spanish/mhubert/6306_4006_000064.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/spanish/hierarchical/6306_4006_000064.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/spanish/unicodec/6306_4006_000064.flac" controls="controls"></audio></th>
+                    </tr>
+                    <tr>
+                        <th style="width:300px"><audio src="audio/spanish/gt/7510_7613_000040.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/spanish/encodec/7510_7613_000040.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/spanish/tfcodec/7510_7613_000040.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/spanish/mhubert/7510_7613_000040.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/spanish/hierarchical/7510_7613_000040.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/spanish/unicodec/7510_7613_000040.flac" controls="controls"></audio></th>
+                    </tr>
+                    <tr>
+                        <th style="width:300px"><audio src="audio/spanish/gt/10667_9310_000052.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/spanish/tfcodec/10667_9310_000052.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/spanish/mhubert/10667_9310_000052.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/spanish/tfcodec/10667_9310_000052.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/spanish/hierarchical/10667_9310_000052.flac" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="audio/spanish/unicodec/10667_9310_000052.flac" controls="controls"></audio></th>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="div-head"><h2>Speech-to-speech translation</h2></div>
+        <div class="div-2">
             <table>
                 <tbody>
                     <tr>
@@ -77,9 +171,9 @@
                         <th style="width:300px">Target (English)</th> 
                         <th style="width:300px">mHubert-Vocoder</th>
                         <th style="width:300px">Hierarchical LM</th>
-                        <th style="width:300px">Unicodec</th>
+                        <th style="width:300px">UniCodec</th>
                     </tr>
-                    <tr>
+                    <!-- <tr>
                         <th style="width:300px"><audio src="s2st/src/common_voice_es_19644507.mp3.wav" controls="controls"></audio></th>
                         <th style="width:300px"><audio src="s2st/tgt/common_voice_es_19644507.mp3.wav" controls="controls"></audio></th>
                         <th style="width:300px"><audio src="s2st/hubert/common_voice_es_19644507.mp3.wav" controls="controls"></audio></th>
@@ -87,11 +181,19 @@
                         <th style="width:300px"><audio src="s2st/unicodec/common_voice_es_19644507.mp3.wav" controls="controls"></audio></th>
                     </tr>
                     <tr>
+                        <th style="width:300px">Pertenece a la Iglesia católica.</th>
+                        <th style="width:300px">It belongs to the catholic church.</th>
+                    </tr> -->
+                    <tr>
                         <th style="width:300px"><audio src="s2st/src/common_voice_es_19636626.mp3.wav" controls="controls"></audio></th>
                         <th style="width:300px"><audio src="s2st/tgt/common_voice_es_19636626.mp3.wav" controls="controls"></audio></th>
                         <th style="width:300px"><audio src="s2st/hubert/common_voice_es_19636626.mp3.wav" controls="controls"></audio></th>
                         <th style="width:300px"><audio src="s2st/hierarchical/common_voice_es_19636626.mp3.wav" controls="controls"></audio></th>
                         <th style="width:300px"><audio src="s2st/unicodec/common_voice_es_19636626.mp3.wav" controls="controls"></audio></th>
+                    </tr>
+                    <tr>
+                        <th style="width:300px">El municipio tiene la última escuela pública del estado.</th>
+                        <th style="width:300px">The municipality has the last public school of the state.</th>
                     </tr>
                     <tr>
                         <th style="width:300px"><audio src="s2st/src/common_voice_es_19167236.mp3.wav" controls="controls"></audio></th>
@@ -101,12 +203,69 @@
                         <th style="width:300px"><audio src="s2st/unicodec/common_voice_es_19167236.mp3.wav" controls="controls"></audio></th>
                     </tr>
                     <tr>
+                        <th style="width:300px">La banda ha tenido varias formaciones.</th>
+                        <th style="width:300px">The band has had several formations</th>
+                    </tr>
+                    <tr>
                         <th style="width:300px"><audio src="s2st/src/common_voice_es_19607234.mp3.wav" controls="controls"></audio></th>
                         <th style="width:300px"><audio src="s2st/tgt/common_voice_es_19607234.mp3.wav" controls="controls"></audio></th>
                         <th style="width:300px"><audio src="s2st/hubert/common_voice_es_19607234.mp3.wav" controls="controls"></audio></th>
                         <th style="width:300px"><audio src="s2st/hierarchical/common_voice_es_19607234.mp3.wav" controls="controls"></audio></th>
                         <th style="width:300px"><audio src="s2st/unicodec/common_voice_es_19607234.mp3.wav" controls="controls"></audio></th>
                     </tr>
+                    <tr>
+                        <th style="width:300px">La versión negra está diseñada para el comprador masculino.</th>
+                        <th style="width:300px">The black version is designed for the male buyer.</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="div-head"><h2>Voice Conversion</h2></div>
+        <div class="div-3">
+            <table>
+                <tbody>
+                    <tr>
+                        <th style="width:300px">Source</th>
+                        <th style="width:300px">Target</th> 
+                        <th style="width:300px">YourTTS-VC</th>
+                        <th style="width:300px">Hierarchical LM</th>
+                        <th style="width:300px">UniCodec w/o. prompt</th>
+                        <th style="width:300px">UniCodec w. prompt</th>
+                    </tr>
+                    <tr>
+                        <th style="width:300px"><audio src="vc/src/1284-1180-0000.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="vc/tgt/908-31957-0009.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="vc/yourtts/1284-1180-0000_to_908-31957-0009.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="vc/hierarchical/1284-1180-0000_to_908-31957-0009.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="vc/unicodec_wo_prompt/1284-1180-0000_to_908-31957-0009.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="vc/unicodec_w_prompt/1284-1180-0000_to_908-31957-0009.wav" controls="controls"></audio></th>
+                    </tr>
+                    <tr>
+                        <th style="width:300px"><audio src="vc/src/260-123286-0003.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="vc/tgt/237-126133-0002.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="vc/yourtts/260-123286-0003_to_237-126133-0002.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="vc/hierarchical/260-123286-0003_to_237-126133-0002.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="vc/unicodec_wo_prompt/260-123286-0003_to_237-126133-0002.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="vc/unicodec_w_prompt/260-123286-0003_to_237-126133-0002.wav" controls="controls"></audio></th>
+                    </tr>
+                    <!-- <tr>
+                        <th style="width:300px"><audio src="vc/src/3570-5694-0008.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="vc/tgt/237-126133-0005.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="vc/yourtts/3570-5694-0008_to_237-126133-0005.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="vc/hierarchical/3570-5694-0008_to_237-126133-0005.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="vc/unicodec_wo_prompt/3570-5694-0008_to_237-126133-0005.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="vc/unicodec_w_prompt/3570-5694-0008_to_237-126133-0005.wav" controls="controls"></audio></th>
+                    </tr> -->
+                    <tr>
+                        <th style="width:300px"><audio src="vc/src/3570-5694-0008.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="vc/tgt/1089-134686-0004.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="vc/yourtts/3570-5694-0008_to_1089-134686-0004.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="vc/hierarchical/3570-5694-0008_to_1089-134686-0004.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="vc/unicodec_wo_prompt/3570-5694-0008_to_1089-134686-0004.wav" controls="controls"></audio></th>
+                        <th style="width:300px"><audio src="vc/unicodec_w_prompt/3570-5694-0008_to_1089-134686-0004.wav" controls="controls"></audio></th>
+                    </tr>
+                    
                 </tbody>
             </table>
         </div>
