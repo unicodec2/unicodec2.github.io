@@ -1,387 +1,412 @@
 <!DOCTYPE html>
 <html>
 
-<style>
-    .div-1 {
-        background-color: #E4E4E3;
-        margin-top: 20px;
-    }
+<head>
+	<meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.88.1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href=""https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/normalize.css">
+
+	<title>UniCodec Demo Page</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1091.0" data-gr-ext-installed="">
+
+<div class="container" >
+<header role="banner">
+</header>
+<main role="main">
+<article itemscope itemtype="https://schema.org/BlogPosting">
+    <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+        <div class="text-center">
+        <h1>UniCodec Demo</h1>
+
+        </div>
     
-    .div-2 {
-    	background-color: #E4E4E3;
-        margin-top: 20px;
-    }
-    .div-3 {
-        background-color: #E4E4E3;
-        margin-top: 20px;
-    }
-    .div-head {
-        /* background-color: #c2c2be; */
-        color: black;
-        font-size: larger;
-        margin-top: 20px;
-    }
-    .div-subhead {
-        /* background-color: #c2c2be;; */
-        margin-top: 20px;
-        font-size: large;
-    }
-</style>
+    </div>
+    
+    
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+	<h2 id="Speech Resynthesis (English)" style="text-align: center;">Speech Resynthesis (English)</h2>
+		<div class="table-responsive pt-3">
+			<table class="table table-hover pt-2">
+			<thead>
+			<tr>
+			<th style="text-align: center">GT</th>
+			<th style="text-align: center">Encodec@6kbps</th>
+			<th style="text-align: center">TFCodec@6kbps</th>
+			<th style="text-align: center">SpeechTokenizer@6kbps</th>
+			<th style="text-align: center">SpeechTokenizer@750bps</th>
+			<th style="text-align: center">Hierarchical LM@500bps</th>
+			<th style="text-align: center">UniCodec@500bps</th>
+			</tr>
+			</thead>
+			<tbody>
+            <tr><td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/gt/5683-32866-0018.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/encodec/5683-32866-0018.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/tfcodec/5683-32866-0018.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/speechtokenizer_stg8/5683-32866-0018.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/speechtokenizer_stg1/5683-32866-0018.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/hierarchical/5683-32866-0018.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/unicodec/5683-32866-0018.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+            <tr><td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/gt/8455-210777-0034.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/encodec/8455-210777-0034.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/tfcodec/8455-210777-0034.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/speechtokenizer_stg8/8455-210777-0034.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/speechtokenizer_stg1/8455-210777-0034.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/hierarchical/8455-210777-0034.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/unicodec/8455-210777-0034.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+            </tr>
+            <tr><td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/gt/4507-16021-0045.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/encodec/4507-16021-0045.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/tfcodec/4507-16021-0045.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/speechtokenizer_stg8/4507-16021-0045.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/speechtokenizer_stg1/4507-16021-0045.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/hierarchical/4507-16021-0045.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/unicodec/4507-16021-0045.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+            </tr>
+            <tr><td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/gt/1320-122617-0037.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/encodec/1320-122617-0037.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/tfcodec/1320-122617-0037.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/speechtokenizer_stg8/1320-122617-0037.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/speechtokenizer_stg1/1320-122617-0037.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/hierarchical/1320-122617-0037.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/unicodec/1320-122617-0037.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+            </tr>
+            <tr><td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/gt/2830-3980-0062.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/encodec/2830-3980-0062.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/tfcodec/2830-3980-0062.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/speechtokenizer_stg8/2830-3980-0062.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/speechtokenizer_stg1/2830-3980-0062.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/hierarchical/2830-3980-0062.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/unicodec/2830-3980-0062.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+            </tr>
+            <tr><td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/gt/4992-41797-0018.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/encodec/4992-41797-0018.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/tfcodec/4992-41797-0018.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/speechtokenizer_stg8/4992-41797-0018.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/speechtokenizer_stg1/4992-41797-0018.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/hierarchical/4992-41797-0018.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/english/unicodec/4992-41797-0018.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+            </tr>
+			</tbody>
+
+			</table>
+		</div>
+</div>
 
 
-<body>
-    <div>
-        <div class="div-head"><h2>Speech Resynthesis (English)</h2></div>
-        <div class="div-1">
-            <!-- <div class="div-subhead"><h3>English</h3></div> -->
-            <table>
-                <tbody>
-                    <tr>
-                        <th style="width:300px">Ground Truth</th>
-                        <th style="width:300px">Encodec@6kbps</th> 
-                        <th style="width:300px">TFCodec@6kbps</th>
-                        <th style="width:300px">mHubert-Vocoder@500bps</th>
-                        <th style="width:300px">Hierarchical LM@500bps</th> 
-                        <th style="width:300px">UniCodec@500bps</th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px"><audio src="audio/english/gt/5683-32866-0018.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/english/encodec/5683-32866-0018.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/english/tfcodec/5683-32866-0018.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/english/mhubert/5683-32866-0018.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/english/hierarchical/5683-32866-0018.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/english/unicodec/5683-32866-0018.flac" controls="controls"></audio></th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px"><audio src="audio/english/gt/8455-210777-0034.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/english/encodec/8455-210777-0034.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/english/tfcodec/8455-210777-0034.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/english/mhubert/8455-210777-0034.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/english/hierarchical/8455-210777-0034.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/english/unicodec/8455-210777-0034.flac" controls="controls"></audio></th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px"><audio src="audio/english/gt/4507-16021-0045.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/english/encodec/4507-16021-0045.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/english/tfcodec/4507-16021-0045.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/english/mhubert/4507-16021-0045.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/english/hierarchical/4507-16021-0045.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/english/unicodec/4507-16021-0045.flac" controls="controls"></audio></th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px"><audio src="audio/english/gt/1320-122617-0037.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/english/encodec/1320-122617-0037.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/english/tfcodec/1320-122617-0037.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/english/mhubert/1320-122617-0037.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/english/hierarchical/1320-122617-0037.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/english/unicodec/1320-122617-0037.flac" controls="controls"></audio></th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px"><audio src="audio/english/gt/2830-3980-0062.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/english/encodec/2830-3980-0062.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/english/tfcodec/2830-3980-0062.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/english/mhubert/2830-3980-0062.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/english/hierarchical/2830-3980-0062.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/english/unicodec/2830-3980-0062.flac" controls="controls"></audio></th>
-                    </tr>
 
-                    <tr>
-                        <th style="width:300px"><audio src="audio/english/gt/4992-41797-0018.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/english/encodec/4992-41797-0018.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/english/tfcodec/4992-41797-0018.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/english/mhubert/4992-41797-0018.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/english/hierarchical/4992-41797-0018.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/english/unicodec/4992-41797-0018.flac" controls="controls"></audio></th>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="div-head"><h2>Speech Resynthesis (Spanish)</h2></div>
-        <div class="div-1">
-            <!-- <div class="div-subhead"><h3>Spanish</h3></div> -->
-            <table>
-                <tbody>
-                    <tr>
-                        <th style="width:300px">Ground Truth</th>
-                        <th style="width:300px">Encodec@6kbps</th> 
-                        <th style="width:300px">TFCodec@6kbps</th>
-                        <th style="width:300px">mHubert-Vocoder@500bps</th>
-                        <th style="width:300px">Hierarchical LM@500bps</th> 
-                        <th style="width:300px">UniCodec@500bps</th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px"><audio src="audio/spanish/gt/6306_4006_000056.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/spanish/encodec/6306_4006_000056.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/spanish/tfcodec/6306_4006_000056.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/spanish/mhubert/6306_4006_000056.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/spanish/hierarchical/6306_4006_000056.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/spanish/unicodec/6306_4006_000056.flac" controls="controls"></audio></th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px"><audio src="audio/spanish/gt/12249_11991_000008.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/spanish/encodec/12249_11991_000008.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/spanish/tfcodec/12249_11991_000008.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/spanish/mhubert/12249_11991_000008.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/spanish/hierarchical/12249_11991_000008.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/spanish/unicodec/12249_11991_000008.flac" controls="controls"></audio></th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px"><audio src="audio/spanish/gt/12525_11991_000075.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/spanish/encodec/12525_11991_000075.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/spanish/tfcodec/12525_11991_000075.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/spanish/mhubert/12525_11991_000075.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/spanish/hierarchical/12525_11991_000075.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/spanish/unicodec/12525_11991_000075.flac" controls="controls"></audio></th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px"><audio src="audio/spanish/gt/6306_4006_000064.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/spanish/encodec/6306_4006_000064.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/spanish/tfcodec/6306_4006_000064.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/spanish/mhubert/6306_4006_000064.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/spanish/hierarchical/6306_4006_000064.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/spanish/unicodec/6306_4006_000064.flac" controls="controls"></audio></th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px"><audio src="audio/spanish/gt/5870_4006_000024.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/spanish/encodec/5870_4006_000024.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/spanish/tfcodec/5870_4006_000024.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/spanish/mhubert/5870_4006_000024.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/spanish/hierarchical/5870_4006_000024.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/spanish/unicodec/5870_4006_000024.flac" controls="controls"></audio></th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px"><audio src="audio/spanish/gt/3503_2162_000068.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/spanish/tfcodec/3503_2162_000068.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/spanish/mhubert/3503_2162_000068.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/spanish/tfcodec/3503_2162_000068.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/spanish/hierarchical/3503_2162_000068.flac" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="audio/spanish/unicodec/3503_2162_000068.flac" controls="controls"></audio></th>
-                    </tr>
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+	<h2 id="Speech Resynthesis (Spanish)" style="text-align: center;">Speech Resynthesis (Spanish)</h2>
+		<div class="table-responsive pt-3">
+			<table class="table table-hover pt-2">
+			<thead>
+			<tr>
+			<th style="text-align: center">GT</th>
+			<th style="text-align: center">Encodec@6kbps</th>
+			<th style="text-align: center">TFCodec@6kbps</th>
+			<th style="text-align: center">SpeechTokenizer@6kbps</th>
+			<th style="text-align: center">SpeechTokenizer@750bps</th>
+			<th style="text-align: center">Hierarchical LM@500bps</th>
+			<th style="text-align: center">UniCodec@500bps</th>
+			</tr>
+			</thead>
+			<tbody>
+            <tr><td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/gt/6306_4006_000056.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/encodec/6306_4006_000056.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/tfcodec/6306_4006_000056.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/speechtokenzier_stg8/6306_4006_000056.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/speechtokenzier_stg1/6306_4006_000056.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/hierarchical/6306_4006_000056.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/unicodec/6306_4006_000056.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+            <tr><td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/gt/12249_11991_000008.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/encodec/12249_11991_000008.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/tfcodec/12249_11991_000008.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/speechtokenzier_stg8/12249_11991_000008.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/speechtokenzier_stg1/12249_11991_000008.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/hierarchical/12249_11991_000008.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/unicodec/12249_11991_000008.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+            </tr>
+            <tr><td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/gt/12525_11991_000075.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/encodec/12525_11991_000075.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/tfcodec/12525_11991_000075.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/speechtokenzier_stg8/12525_11991_000075.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/speechtokenzier_stg1/12525_11991_000075.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/hierarchical/12525_11991_000075.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/unicodec/12525_11991_000075.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+            </tr>
+            <tr><td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/gt/6306_4006_000064.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/encodec/6306_4006_000064.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/tfcodec/6306_4006_000064.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/speechtokenzier_stg8/6306_4006_000064.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/speechtokenzier_stg1/6306_4006_000064.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/hierarchical/6306_4006_000064.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/unicodec/6306_4006_000064.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+            </tr>
+            <tr><td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/gt/5870_4006_000024.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/encodec/5870_4006_000024.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/tfcodec/5870_4006_000024.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/speechtokenzier_stg8/5870_4006_000024.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/speechtokenzier_stg1/5870_4006_000024.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/hierarchical/5870_4006_000024.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/unicodec/5870_4006_000024.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+            </tr>
+            <tr><td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/gt/3503_2162_000068.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/encodec/3503_2162_000068.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/tfcodec/3503_2162_000068.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/speechtokenzier_stg8/3503_2162_000068.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/speechtokenzier_stg1/3503_2162_000068.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/hierarchical/3503_2162_000068.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audio/spanish/unicodec/3503_2162_000068.flac" autoplay/>Your browser does not support the audio element.</audio></td>
+            </tr>
+			</tbody>
 
-                </tbody>
-            </table>
-        </div>
-        
-        <div class="div-head"><h2>Text-to-Speech Synthesis</h2></div>
-        <th style="width:300px">Building...</th>
+			</table>
+		</div>
+</div>
 
 
-        <!-- <div class="div-2">
-            <table>
-                <tbody>
-                    <tr>
-                        <th style="width:300px">Text</th>
-                        <th style="width:300px">Prompt</th> 
-                        <th style="width:300px">GT</th>
-                        <th style="width:300px">YourTTS</th>
-                        <th style="width:300px">VALL-E#</th>
-                        <th style="width:300px">USLM*</th>
-                        <th style="width:300px">Hierarchical LM</th>
-                        <th style="width:300px">UniCodec</th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px"></th>
-                        <th style="width:300px"><audio src="s2st/src/common_voice_es_19636626.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/tgt/common_voice_es_19636626.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/hubert/common_voice_es_19636626.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/hierarchical/common_voice_es_19636626.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/unicodec/common_voice_es_19636626.mp3.wav" controls="controls"></audio></th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px">El municipio tiene la última escuela pública del estado.</th>
-                        <th style="width:300px">The municipality has the last public school of the state.</th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px"><audio src="s2st/src/common_voice_es_19664420.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/tgt/common_voice_es_19664420.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/hubert/common_voice_es_19664420.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/hierarchical/common_voice_es_19664420.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/unicodec/common_voice_es_19664420.mp3.wav" controls="controls"></audio></th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px">Su puerta de entrada está en la fachada sur.</th>
-                        <th style="width:300px">The entrance door is on the south facade.</th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px"><audio src="s2st/src/common_voice_es_19128785.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/tgt/common_voice_es_19128785.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/hubert/common_voice_es_19128785.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/hierarchical/common_voice_es_19128785.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/unicodec/common_voice_es_19128785.mp3.wav" controls="controls"></audio></th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px">Cuenta con el hospital público ""Pedro María Santana"".</th>
-                        <th style="width:300px">It has the public hospital pedro maria santana.</th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px"><audio src="s2st/src/common_voice_es_19167236.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/tgt/common_voice_es_19167236.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/hubert/common_voice_es_19167236.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/hierarchical/common_voice_es_19167236.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/unicodec/common_voice_es_19167236.mp3.wav" controls="controls"></audio></th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px">La banda ha tenido varias formaciones.</th>
-                        <th style="width:300px">The band has had several formations</th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px"><audio src="s2st/src/common_voice_es_19607234.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/tgt/common_voice_es_19607234.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/hubert/common_voice_es_19607234.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/hierarchical/common_voice_es_19607234.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/unicodec/common_voice_es_19607234.mp3.wav" controls="controls"></audio></th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px">La versión negra está diseñada para el comprador masculino.</th>
-                        <th style="width:300px">The black version is designed for the male buyer.</th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px"><audio src="s2st/src/common_voice_es_19628115.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/tgt/common_voice_es_19628115.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/hubert/common_voice_es_19628115.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/hierarchical/common_voice_es_19628115.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/unicodec/common_voice_es_19628115.mp3.wav" controls="controls"></audio></th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px">Fue escrita por Luca Prodan.</th>
-                        <th style="width:300px">It was written by luca prodan.</th>
-                    </tr>
-                </tbody>
-            </table>
-        </div> -->
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+	<h2 id="Text-to-Speech Synthesis" style="text-align: center;">Text-to-Speech Synthesis</h2>
+		<div class="table-responsive pt-3">
+			<table class="table table-hover pt-2">
+			<thead>
+			<tr>
+			<th style="text-align: center">Text</th>
+			<th style="text-align: center">Prompt</th>
+			<th style="text-align: center">GT</th>
+			<th style="text-align: center">YourTTS</th>
+			<th style="text-align: center">VALL-E#</th>
+			<th style="text-align: center">USLM*</th>
+			<th style="text-align: center">Hierarchical LM</th>
+			<th style="text-align: center">UniCodecLM</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr><td style="text-align: left;vertical-align:middle;width: 600px">He darted like an arrow through all the halls down all the stairs and across the yard</td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="tts/prompt/7021-85628-0027.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="tts/src/7021-85628-0020.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="tts/yourtts2/7021-85628-0020.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="tts/valle/7021-85628-0020.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="tts/uslm/7021-85628-0020.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="tts/hierarchical/7021-85628-0020.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="tts/unicodec/7021-85628-0020.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr><td style="text-align: left;vertical-align:middle;width: 600px">The inmates being removed at the appointed hour a few cannon balls were fired through the stone walls</td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="tts/prompt/7729-102255-0002.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="tts/src/7729-102255-0039.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="tts/yourtts2/7729-102255-0039.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="tts/valle/7729-102255-0039.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="tts/uslm/7729-102255-0039.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="tts/hierarchical/7729-102255-0039.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="tts/unicodec/7729-102255-0039.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+            </tr>
+            <tr><td style="text-align: left;vertical-align:middle;width: 600px">But this subject will be more properly discussed when we treat of the different races of mankind</td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="tts/prompt/5142-33396-0044.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="tts/src/5142-36586-0003.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="tts/yourtts2/5142-36586-0003.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="tts/valle/5142-36586-0003.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="tts/uslm/5142-36586-0003.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="tts/hierarchical/5142-36586-0003.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="tts/unicodec/5142-36586-0003.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+            </tr>
+			<tr><td style="text-align: left;vertical-align:middle;width: 600px">What can you mean by that Miss Woodley You talk mysteriously</td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="tts/prompt/4992-23283-0009.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="tts/src/4992-23283-0014.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="tts/yourtts2/4992-23283-0014.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="tts/valle/4992-23283-0014.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="tts/uslm/4992-23283-0014.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="tts/hierarchical/4992-23283-0014.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="tts/unicodec/4992-23283-0014.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+            </tr>
+			</tbody>
+			</table>
+		</div>
+</div>
 
 
-        <div class="div-head"><h2>Speech-to-Speech Translation</h2></div>
-        <div class="div-2">
-            <table>
-                <tbody>
-                    <tr>
-                        <th style="width:300px">Source (Spanish)</th>
-                        <th style="width:300px">Target (English)</th> 
-                        <th style="width:300px">mHubert-Vocoder</th>
-                        <th style="width:300px">Hierarchical LM</th>
-                        <th style="width:300px">UniCodec</th>
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+	<h2 id="Speech-to-Speech Translation" style="text-align: center;">Speech-to-Speech Translation</h2>
+		<div class="table-responsive pt-3">
+			<table class="table table-hover pt-2">
+			<thead>
+			<tr>
+			<th style="text-align: center">Source (Spanish)</th>
+			<th style="text-align: center">Source text</th>
+			<th style="text-align: center">Target (English)</th>
+			<th style="text-align: center">Target txt</th>
+			<th style="text-align: center">mHubert-Vocoder</th>
+			<th style="text-align: center">Hierarchical LM</th>
+			<th style="text-align: center">UniCodecLM</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="s2st/src/common_voice_es_19636626.mp3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: left;vertical-align:middle;width: 600px">El municipio tiene la última escuela pública del estado</td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="s2st/tgt/common_voice_es_19636626.mp3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: left;vertical-align:middle;width: 600px">The municipality has the last public school of the state</td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="s2st/hubert/common_voice_es_19636626.mp3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="s2st/hierarchical/common_voice_es_19636626.mp3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="s2st/unicodec/common_voice_es_19636626.mp3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<!-- <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="tts/unicodec/7021-85628-0020.wav" autoplay/>Your browser does not support the audio element.</audio></td> -->
+			</tr>
+			<tr>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="s2st/src/common_voice_es_19664420.mp3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: left;vertical-align:middle;width: 600px">Su puerta de entrada está en la fachada sur</td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="s2st/tgt/common_voice_es_19664420.mp3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: left;vertical-align:middle;width: 600px">The entrance door is on the south facade</td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="s2st/hubert/common_voice_es_19664420.mp3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="s2st/hierarchical/common_voice_es_19664420.mp3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="s2st/unicodec/common_voice_es_19664420.mp3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <!-- <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="tts/unicodec/7021-85628-0020.wav" autoplay/>Your browser does not support the audio element.</audio></td> -->
+                </tr>
+                <tr>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="s2st/src/common_voice_es_19128785.mp3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: left;vertical-align:middle;width: 600px">Cuenta con el hospital público ""Pedro María Santana""</td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="s2st/tgt/common_voice_es_19128785.mp3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: left;vertical-align:middle;width: 600px">It has the public hospital pedro maria santana</td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="s2st/hubert/common_voice_es_19128785.mp3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="s2st/hierarchical/common_voice_es_19128785.mp3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="s2st/unicodec/common_voice_es_19128785.mp3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <!-- <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="tts/unicodec/7021-85628-0020.wav" autoplay/>Your browser does not support the audio element.</audio></td> -->
                     </tr>
                     <tr>
-                        <th style="width:300px"><audio src="s2st/src/common_voice_es_19636626.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/tgt/common_voice_es_19636626.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/hubert/common_voice_es_19636626.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/hierarchical/common_voice_es_19636626.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/unicodec/common_voice_es_19636626.mp3.wav" controls="controls"></audio></th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px">El municipio tiene la última escuela pública del estado.</th>
-                        <th style="width:300px">The municipality has the last public school of the state.</th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px"><audio src="s2st/src/common_voice_es_19664420.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/tgt/common_voice_es_19664420.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/hubert/common_voice_es_19664420.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/hierarchical/common_voice_es_19664420.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/unicodec/common_voice_es_19664420.mp3.wav" controls="controls"></audio></th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px">Su puerta de entrada está en la fachada sur.</th>
-                        <th style="width:300px">The entrance door is on the south facade.</th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px"><audio src="s2st/src/common_voice_es_19128785.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/tgt/common_voice_es_19128785.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/hubert/common_voice_es_19128785.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/hierarchical/common_voice_es_19128785.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/unicodec/common_voice_es_19128785.mp3.wav" controls="controls"></audio></th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px">Cuenta con el hospital público ""Pedro María Santana"".</th>
-                        <th style="width:300px">It has the public hospital pedro maria santana.</th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px"><audio src="s2st/src/common_voice_es_19167236.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/tgt/common_voice_es_19167236.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/hubert/common_voice_es_19167236.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/hierarchical/common_voice_es_19167236.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/unicodec/common_voice_es_19167236.mp3.wav" controls="controls"></audio></th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px">La banda ha tenido varias formaciones.</th>
-                        <th style="width:300px">The band has had several formations</th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px"><audio src="s2st/src/common_voice_es_19607234.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/tgt/common_voice_es_19607234.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/hubert/common_voice_es_19607234.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/hierarchical/common_voice_es_19607234.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/unicodec/common_voice_es_19607234.mp3.wav" controls="controls"></audio></th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px">La versión negra está diseñada para el comprador masculino.</th>
-                        <th style="width:300px">The black version is designed for the male buyer.</th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px"><audio src="s2st/src/common_voice_es_19628115.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/tgt/common_voice_es_19628115.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/hubert/common_voice_es_19628115.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/hierarchical/common_voice_es_19628115.mp3.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="s2st/unicodec/common_voice_es_19628115.mp3.wav" controls="controls"></audio></th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px">Fue escrita por Luca Prodan.</th>
-                        <th style="width:300px">It was written by luca prodan.</th>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+                        <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="s2st/src/common_voice_es_19167236.mp3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: left;vertical-align:middle;width: 600px">La banda ha tenido varias formaciones</td>
+                        <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="s2st/tgt/common_voice_es_19167236.mp3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: left;vertical-align:middle;width: 600px">The band has had several formations</td>
+                        <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="s2st/hubert/common_voice_es_19167236.mp3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="s2st/hierarchical/common_voice_es_19167236.mp3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="s2st/unicodec/common_voice_es_19167236.mp3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <!-- <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="tts/unicodec/7021-85628-0020.wav" autoplay/>Your browser does not support the audio element.</audio></td> -->
+                        </tr>
+                        <tr>
+                            <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="s2st/src/common_voice_es_19607234.mp3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                            <td style="text-align: left;vertical-align:middle;width: 600px">La versión negra está diseñada para el comprador masculino</td>
+                            <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="s2st/tgt/common_voice_es_19607234.mp3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                            <td style="text-align: left;vertical-align:middle;width: 600px">The black version is designed for the male buyer</td>
+                            <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="s2st/hubert/common_voice_es_19607234.mp3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                            <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="s2st/hierarchical/common_voice_es_19607234.mp3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                            <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="s2st/unicodec/common_voice_es_19607234.mp3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                            <!-- <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="tts/unicodec/7021-85628-0020.wav" autoplay/>Your browser does not support the audio element.</audio></td> -->
+                            </tr>
+                            <tr>
+                                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="s2st/src/common_voice_es_19628115.mp3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                                <td style="text-align: left;vertical-align:middle;width: 600px">Fue escrita por Luca Prodan</td>
+                                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="s2st/tgt/common_voice_es_19628115.mp3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                                <td style="text-align: left;vertical-align:middle;width: 600px">It was written by luca prodan</td>
+                                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="s2st/hubert/common_voice_es_19628115.mp3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="s2st/hierarchical/common_voice_es_19628115.mp3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="s2st/unicodec/common_voice_es_19628115.mp3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                                <!-- <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="tts/unicodec/7021-85628-0020.wav" autoplay/>Your browser does not support the audio element.</audio></td> -->
+                                </tr>
+			</tbody>
+			</table>
+		</div>
+</div>
 
-        <div class="div-head"><h2>Voice Conversion</h2></div>
-        <div class="div-3">
-            <table>
-                <tbody>
-                    <tr>
-                        <th style="width:300px">Source</th>
-                        <th style="width:300px">Target</th> 
-                        <th style="width:300px">YourTTS-VC</th>
-                        <th style="width:300px">Hierarchical LM</th>
-                        <th style="width:300px">UniCodec</th>
-                        <th style="width:300px">UniCodec w. prompt</th>
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+	<h2 id="Voice Conversion" style="text-align: center;">Voice Conversion</h2>
+		<div class="table-responsive pt-3">
+			<table class="table table-hover pt-2">
+			<thead>
+			<tr>
+			<th style="text-align: center">Source</th>
+			<th style="text-align: center">Target</th>
+			<th style="text-align: center">YourTTS-VC</th>
+			<th style="text-align: center">Hierarchical LM</th>
+			<th style="text-align: center">UniCodec</th>
+			<th style="text-align: center">UniCodec w. prompt</th>
+			</tr>
+			</thead>
+			<tbody>
+            <tr><td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="vc/src/1284-1180-0000.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="vc/tgt/908-31957-0009.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="vc/yourtts/1284-1180-0000_to_908-31957-0009.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="vc/hierarchical/1284-1180-0000_to_908-31957-0009.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="vc/unicodec_wo_prompt/1284-1180-0000_to_908-31957-0009.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="vc/unicodec_w_prompt/1284-1180-0000_to_908-31957-0009.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+            <tr><td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="vc/src/260-123286-0003.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="vc/tgt/237-126133-0002.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="vc/yourtts/260-123286-0003_to_237-126133-0002.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="vc/hierarchical/260-123286-0003_to_237-126133-0002.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="vc/unicodec_wo_prompt/260-123286-0003_to_237-126133-0002.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="vc/unicodec_w_prompt/260-123286-0003_to_237-126133-0002.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                </tr>
+                <tr><td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="vc/src/3570-5694-0008.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="vc/tgt/237-126133-0005.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="vc/yourtts/3570-5694-0008_to_237-126133-0005.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="vc/hierarchical/3570-5694-0008_to_237-126133-0005.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="vc/unicodec_wo_prompt/3570-5694-0008_to_237-126133-0005.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="vc/unicodec_w_prompt/3570-5694-0008_to_237-126133-0005.wav" autoplay/>Your browser does not support the audio element.</audio></td>
                     </tr>
-                    <tr>
-                        <th style="width:300px"><audio src="vc/src/1284-1180-0000.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="vc/tgt/908-31957-0009.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="vc/yourtts/1284-1180-0000_to_908-31957-0009.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="vc/hierarchical/1284-1180-0000_to_908-31957-0009.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="vc/unicodec_wo_prompt/1284-1180-0000_to_908-31957-0009.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="vc/unicodec_w_prompt/1284-1180-0000_to_908-31957-0009.wav" controls="controls"></audio></th>
-                    </tr>
-                    <tr>
-                        <th style="width:300px"><audio src="vc/src/260-123286-0003.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="vc/tgt/237-126133-0002.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="vc/yourtts/260-123286-0003_to_237-126133-0002.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="vc/hierarchical/260-123286-0003_to_237-126133-0002.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="vc/unicodec_wo_prompt/260-123286-0003_to_237-126133-0002.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="vc/unicodec_w_prompt/260-123286-0003_to_237-126133-0002.wav" controls="controls"></audio></th>
-                    </tr>
-                    <!-- <tr>
-                        <th style="width:300px"><audio src="vc/src/3570-5694-0008.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="vc/tgt/237-126133-0005.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="vc/yourtts/3570-5694-0008_to_237-126133-0005.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="vc/hierarchical/3570-5694-0008_to_237-126133-0005.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="vc/unicodec_wo_prompt/3570-5694-0008_to_237-126133-0005.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="vc/unicodec_w_prompt/3570-5694-0008_to_237-126133-0005.wav" controls="controls"></audio></th>
-                    </tr> -->
-                    <tr>
-                        <th style="width:300px"><audio src="vc/src/3570-5694-0008.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="vc/tgt/1089-134686-0004.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="vc/yourtts/3570-5694-0008_to_1089-134686-0004.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="vc/hierarchical/3570-5694-0008_to_1089-134686-0004.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="vc/unicodec_wo_prompt/3570-5694-0008_to_1089-134686-0004.wav" controls="controls"></audio></th>
-                        <th style="width:300px"><audio src="vc/unicodec_w_prompt/3570-5694-0008_to_1089-134686-0004.wav" controls="controls"></audio></th>
-                    </tr>
-                    
-                </tbody>
-            </table>
-        </div>
-        <div class="div-head"><h2>Pitch conversion</h2></div>
-        <th style="width:300px">Building...</th>
+                    <tr><td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="vc/src/3570-5694-0008.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="vc/tgt/1089-134686-0004.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="vc/yourtts/3570-5694-0008_to_1089-134686-0004.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="vc/hierarchical/3570-5694-0008_to_1089-134686-0004.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="vc/unicodec_wo_prompt/3570-5694-0008_to_1089-134686-0004.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="vc/unicodec_w_prompt/3570-5694-0008_to_1089-134686-0004.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        </tr>
+			</tbody>
+
+			</table>
+		</div>
+</div>
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+	<h2 id="Pitch Conversion" style="text-align: center;">Pitch Conversion</h2>
+		<div class="table-responsive pt-3">
+			<table class="table table-hover pt-2">
+			<thead>
+			<tr>
+			<th style="text-align: center">Source</th>
+			<th style="text-align: center">Target</th>
+			<th style="text-align: center">UniCodec</th>
+			</tr>
+			</thead>
+			<tbody>
+            <tr><td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="pitch/gt/121-121726-0009.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="pitch/f_norm/121-121726-0009.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="pitch/se_orig_ac_norm_spk_orig/121-121726-0009.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+            <tr><td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="pitch/gt/237-126133-0019.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="pitch/f_norm/237-126133-0019.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="pitch/se_orig_ac_norm_spk_orig/237-126133-0019.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                </tr>
+            <tr><td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="pitch/gt/260-123288-0008.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="pitch/f_norm/260-123288-0008.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="pitch/se_orig_ac_norm_spk_orig/260-123288-0008.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                </tr>
+            <tr><td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="pitch/gt/61-70968-0016.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="pitch/f_norm/61-70968-0016.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="pitch/se_orig_ac_norm_spk_orig/61-70968-0016.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                </tr>
+            <!-- <tr><td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="pitch/gt/672-122797-0003.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="pitch/f_norm/672-122797-0003.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="pitch/se_orig_ac_norm_spk_orig/672-122797-0003.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                </tr> -->
+
+            <tr><td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="pitch/gt/908-31957-0009.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="pitch/f_norm/908-31957-0009.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="pitch/se_orig_ac_norm_spk_orig/908-31957-0009.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                </tr>
+			</tbody>
+
+			</table>
+		</div>
+</div>
+</article>
+</main>
+</div>
 
 </body>
 </html>
