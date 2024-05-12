@@ -177,6 +177,7 @@
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
 	<h2 id="Text-to-Speech Synthesis" style="text-align: center;">Text-to-Speech Synthesis</h2>
     <p> 
+        Samples from the LibriSpeech test-clean dataset.
         <strong>VALL-E#</strong>:the third-party implementation trained on LibriTTS.  <strong>USLM*</strong>: the official released models trained on LibriTTS.
     </p>
     	<div class="table-responsive pt-3">
@@ -240,7 +241,7 @@
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
 	<h2 id="Expressive Text-to-Speech Synthesis" style="text-align: center;">Expressive Text-to-Speech Synthesis</h2>
     <p> 
-        <strong>VALL-E#</strong>:the third-party implementation trained on LibriTTS.  
+        Samples from the RAVDESS dataset.
     </p>
     	<div class="table-responsive pt-3">
 			<table class="table table-hover pt-2">
@@ -248,55 +249,81 @@
 			<tr>
 			<th style="text-align: center">Text</th>
 			<th style="text-align: center">Emotion</th>
-			<th style="text-align: center">GT</th>
+			<th style="text-align: center">Prompt</th>
+			<!-- <th style="text-align: center">GT</th> -->
 			<th style="text-align: center">YourTTS</th>
-			<th style="text-align: center">VALL-E#</th>
 			<th style="text-align: center">Hierarchical LM</th>
 			<th style="text-align: center">UniCodecLM</th>
 			</tr>
 			</thead>
 			<tbody>
-            <tr><td style="text-align: left;vertical-align:middle;width: 600px">Kids are talking by the door</td>
-                <td style="text-align: left;vertical-align:middle;width: 600px">Sad</td>
-                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts2/prompt/03-01-04-02-01-02-21.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts2/yourtts/03-01-04-02-01-02-21.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts2/valle/03-01-04-02-01-02-21.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts2/hierarchical/03-01-04-02-01-02-21.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts2/unicodec/03-01-04-02-01-02-21.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-            </tr>
+
+
 
             <tr><td style="text-align: left;vertical-align:middle;width: 600px">Kids are talking by the door</td>
                 <td style="text-align: left;vertical-align:middle;width: 600px">Fearful</td>
-                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts2/prompt/03-01-06-02-01-01-01.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts2/yourtts/03-01-06-02-01-01-01.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts2/valle/03-01-06-02-01-01-01.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts2/hierarchical/03-01-06-02-01-01-01.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts2/unicodec/03-01-06-02-01-01-01.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/prompt/03-01-06-02-02-02-01.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <!-- <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/gt/03-01-06-02-01-01-01.wav" autoplay/>Your browser does not support the audio element.</audio></td> -->
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/yourtts/03-01-06-02-01-01-01.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/hierarchical/03-01-06-02-01-01-01.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/unicodec/03-01-06-02-01-01-01.wav" autoplay/>Your browser does not support the audio element.</audio></td>
             </tr>
-            <tr><td style="text-align: left;vertical-align:middle;width: 600px">Dogs are sitting by the door</td>
+        </tr><tr><td style="text-align: left;vertical-align:middle;width: 600px">Kids are talking by the door</td>
+            <td style="text-align: left;vertical-align:middle;width: 600px">Sad</td>
+            <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/prompt/03-01-04-02-02-02-07.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <!-- <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/gt/03-01-04-02-01-02-07.wav" autoplay/>Your browser does not support the audio element.</audio></td> -->
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/yourtts/03-01-04-02-01-02-07.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/hierarchical/03-01-04-02-01-02-07.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/unicodec/03-01-04-02-01-02-07.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+        </tr>
+        <tr><td style="text-align: left;vertical-align:middle;width: 600px">Dogs are sitting by the door</td>
+                <td style="text-align: left;vertical-align:middle;width: 600px">Disgusted</td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/prompt/03-01-07-02-01-01-03.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <!-- <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/gt/03-01-07-02-02-01-03.wav" autoplay/>Your browser does not support the audio element.</audio></td> -->
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/yourtts/03-01-07-02-02-01-03.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/hierarchical/03-01-07-02-02-01-03.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/unicodec/03-01-07-02-02-01-03.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+
+            <!-- <tr><td style="text-align: left;vertical-align:middle;width: 600px">Kids are talking by the door</td>
+                <td style="text-align: left;vertical-align:middle;width: 600px">Sad</td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/prompt/03-01-04-02-02-02-21.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/gt/03-01-04-02-01-02-21.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/yourtts/03-01-04-02-01-02-21.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/hierarchical/03-01-04-02-01-02-21.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/unicodec/03-01-04-02-01-02-21.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+            </tr> -->
+            <tr><td style="text-align: left;vertical-align:middle;width: 600px">Kids are talking by the door</td>
                 <td style="text-align: left;vertical-align:middle;width: 600px">Surprised</td>
-                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts2/prompt/03-01-08-02-02-02-21.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts2/yourtts/03-01-08-02-02-02-21.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts2/valle/03-01-08-02-02-02-21.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts2/hierarchical/03-01-08-02-02-02-21.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts2/unicodec/03-01-08-02-02-02-21.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-            </tr>
-            <tr><td style="text-align: left;vertical-align:middle;width: 600px">Dogs are sitting by the door</td>
-                <td style="text-align: left;vertical-align:middle;width: 600px">Angry</td>
-                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts2/prompt/03-01-05-02-02-02-07.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts2/yourtts/03-01-05-02-02-02-07.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts2/valle/03-01-05-02-02-02-07.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts2/hierarchical/03-01-05-02-02-02-07.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts2/unicodec/03-01-05-02-02-02-07.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/prompt/03-01-08-02-02-01-22.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <!-- <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/gt/03-01-08-02-01-01-22.wav" autoplay/>Your browser does not support the audio element.</audio></td> -->
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/yourtts/03-01-08-02-01-01-22.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/hierarchical/03-01-08-02-01-01-22.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/unicodec/03-01-08-02-01-01-22.wav" autoplay/>Your browser does not support the audio element.</audio></td>
             </tr>
             <tr><td style="text-align: left;vertical-align:middle;width: 600px">Kids are talking by the door</td>
-                <td style="text-align: left;vertical-align:middle;width: 600px">Disgusted</td>
-                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts2/prompt/03-01-07-02-01-02-02.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts2/yourtts/03-01-07-02-01-02-02.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts2/valle/03-01-07-02-01-02-02.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts2/hierarchical/03-01-07-02-01-02-02.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts2/unicodec/03-01-07-02-01-02-02.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                <td style="text-align: left;vertical-align:middle;width: 600px">Angry</td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/prompt/03-01-05-02-02-01-11.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <!-- <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/gt/03-01-05-02-01-01-11.wav" autoplay/>Your browser does not support the audio element.</audio></td> -->
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/yourtts/03-01-05-02-01-01-11.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/hierarchical/03-01-05-02-01-01-11.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/unicodec/03-01-05-02-01-01-11.wav" autoplay/>Your browser does not support the audio element.</audio></td>
             </tr>
+            <!-- <tr><td style="text-align: left;vertical-align:middle;width: 600px">Dogs are sitting by the door</td>
+                <td style="text-align: left;vertical-align:middle;width: 600px">Angry</td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/prompt/03-01-05-02-01-02-07.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/gt/03-01-05-02-02-02-07.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/yourtts/03-01-05-02-02-02-07.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/hierarchical/03-01-05-02-02-02-07.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/unicodec/03-01-05-02-02-02-07.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+            </tr>
+            <tr><td style="text-align: left;vertical-align:middle;width: 600px">Kids are talking by the door</td>
+                <td style="text-align: left;vertical-align:middle;width: 600px">Happy</td>
+                <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/prompt/03-01-03-02-02-02-04.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/gt/03-01-03-02-01-02-04.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/yourtts/03-01-03-02-01-02-04.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/hierarchical/03-01-03-02-01-02-04.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    <td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="expressive_tts3/unicodec/03-01-03-02-01-02-04.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+            </tr> -->
 			</tbody>
 			</table>
 		</div>
